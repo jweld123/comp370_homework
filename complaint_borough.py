@@ -45,7 +45,7 @@ def main():
     start_date = datetime.strptime(args.start, '%Y-%m-%d')
     end_date = datetime.strptime(args.end, '%Y-%m-%d')
 
-    complaint_data = process_complaints(args.input, start_date, end_date)
+    complaint_data = comp(args.input, start_date, end_date)
     output_results(complaint_data, args.output)
 
 if __name__ == "__main__":
